@@ -1,0 +1,47 @@
+.filterSection {
+  padding: 16px;
+}
+
+.customizableFilter, .filterGroup {
+  margin-bottom: 20px;
+}
+
+.filterCheckbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxLabel {
+  margin-left: 8px;
+}
+
+.filterTitle {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.expandIcon {
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.filterOptions {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.filterOptions li {
+  margin-bottom: 8px;
+}
+
+.unselectAll {
+  color: gray;
+  cursor: pointer;
+  margin-bottom: 8px;
+}

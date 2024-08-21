@@ -1,0 +1,156 @@
+.productListingContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+}
+
+.pageTitle {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.pageDescription {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.contentDivider {
+  border-bottom: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.productSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.productHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.productCount {
+  display: flex;
+  align-items: center;
+}
+
+.filterToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+.filterIcon, .sortIcon {
+  margin-right: 10px;
+}
+
+.sortSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sortDropdown {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.sortSection::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-width: 0 4px 4px 0;
+  border-color: transparent transparent #3C702E; 
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0; 
+}
+
+.sortSection.selected::after {
+  opacity: 1; 
+}
+
+.sortLabel {
+  font-size: 1em;
+}
+
+.productContent {
+  display: flex;
+}
+
+.filterWrapper {
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.filterWrapper.show {
+  transform: translateX(0);
+}
+
+.filterWrapper.hide {
+  transform: translateX(-100%);
+}
+
+.productGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.sortSection {
+  display: flex;
+  align-items: center; 
+  position: relative;
+}
+
+.sortDropdown {
+  padding: 8px 12px;
+  border: 1px solid #ffffff; 
+  border-radius: 4px; 
+  background-color: #fff;
+  color: #333; 
+  font-size: 16px; 
+  outline: none; 
+  cursor: pointer; 
+  transition: border-color 0.3s ease; 
+}
+
+.sortDropdown:focus {
+  border-color: #000000; 
+}
+
+.sortIcon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%); 
+  width: 20px; 
+  height: 20px; 
+}
+
+.sortIcon.visible {
+  display: block;
+}
+
+.sortIcon.hidden {
+  display: none;
+}
